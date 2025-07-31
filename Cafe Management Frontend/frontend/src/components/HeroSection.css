@@ -1,0 +1,99 @@
+.hero-section::before{
+    position: absolute;
+    overflow: hidden;
+}
+
+.blur-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2.7px);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  .caption h6 {
+    font-size: 24px; /* Was likely 16px or so */
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .caption h2 {
+    font-size: 48px; /* Bigger headline */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .caption p {
+    font-size: 20px; /* More readable paragraph */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+  }
+  .blur-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: blur(2.7px);
+    z-index: 1;
+    opacity: 1;
+  }
+  .blur-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+  }
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  .nav-link-hover {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-link-hover:hover::after {
+  width: 100%;
+}
+
+.hamburger-btn.open i::before {
+  content: '\f62a'; /* Bootstrap close icon */
+}
+
+    

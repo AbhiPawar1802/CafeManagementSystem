@@ -1,0 +1,28 @@
+/* .section-divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .section-divider::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #f4c430;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .section-divider h3 {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #fff8e1;
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+  } */
+  

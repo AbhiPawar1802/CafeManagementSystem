@@ -1,0 +1,24 @@
+/* src/pages/FavoritesPage.css */
+.favorite-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--bs-body-bg);
+}
+
+.favorite-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-card-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-text {
+  max-height: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

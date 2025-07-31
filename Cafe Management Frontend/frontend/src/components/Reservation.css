@@ -1,0 +1,252 @@
+.reservation-section {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at 10% 20%, #fff5f0 0%, transparent 50%);
+  padding: 100px 0;
+  border-top: 4px solid linear-gradient(to right, #ff6d5f, #ffa07a);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section heading */
+.section-heading h6 {
+  color: #ff7043;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  color: #3e2723;
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.section-subtext {
+  color: #6d4c41;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+/* Form container */
+.glass-form {
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  padding: 45px 35px;
+  border-radius: 20px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Floating labels container */
+.glass-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.glass-form input,
+.glass-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px 16px 16px 48px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  color: #3e2723;
+  transition: all 0.3s ease;
+}
+
+.glass-form input:focus,
+.glass-form textarea:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 0 4px rgba(255, 112, 67, 0.1);
+  background-color: #fff;
+  outline: none;
+}
+
+.glass-form textarea {
+  resize: none;
+}
+
+/* Floating label text */
+.glass-form label {
+  position: absolute;
+  left: 48px;
+  top: 16px;
+  font-size: 1rem;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.glass-form input:focus + label,
+.glass-form input:not(:placeholder-shown) + label,
+.glass-form textarea:focus + label,
+.glass-form textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 40px;
+  font-size: 0.75rem;
+  color: #ff7043;
+  background: #fff;
+  padding: 0 5px;
+  z-index: 2;
+}
+
+/* Input icons */
+.glass-form .icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: #bbb;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* Submit Button */
+.btn-godly {
+  background: linear-gradient(135deg, #ff7043, #ff5722);
+  border: none;
+  padding: 14px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 112, 67, 0.3);
+}
+
+.btn-godly:hover {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  transform: scale(1.02);
+  box-shadow: 0 8px 28px rgba(255, 87, 34, 0.35);
+}
+
+/* Form fade animation with delay */
+.animate-fade {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .glass-form {
+    padding: 30px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .btn-godly {
+    font-size: 1rem;
+  }
+}
+/* Flip Card Styles */
+.card-container {
+  perspective: 1500px;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+}
+
+.card-front,
+.card-back {
+  transition: transform 0.9s ease-in-out;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 50px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-container.flipped .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-container.flipped .card-back {
+  transform: rotateY(0deg);
+  z-index: 3;
+}
+
+/* Glass Time Picker */
+.time-picker-glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 112, 67, 0.4);
+  box-shadow: 0 4px 10px rgba(255, 112, 67, 0.1);
+}
+
+/* Mascot Lottie Container */
+.mascot-box {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.success-animation {
+  max-width: 350px;
+  margin: auto;
+}
+/* Glass Time Picker */
+.time-picker-glass {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 112, 67, 0.4);
+  box-shadow: 0 4px 10px rgba(255, 112, 67, 0.1);
+}
+
+/* Mascot Lottie Container */
+.mascot-box {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+/* Success Lottie Animation */
+.success-animation {
+  max-width: 350px;
+  margin: auto;
+}
+
+/* Optional: Custom button */
+.btn-custom {
+  background-color: #ff7043;
+  border: none;
+  padding: 10px 30px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-custom:hover {
+  background-color: #f4511e;
+}

@@ -1,0 +1,206 @@
+/* Section background with very light soft greenish-white */
+.section-bg {
+  background-color: #F7FFF7;
+  padding: 60px 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Accent text - bright warm orange */
+.text-accent {
+  color: #ff7043;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Section title and chef names - dark brown */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+
+/* Description text - medium brown */
+.chef-description {
+  font-size: 1.1rem;
+  color: #5d4037;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/* Chef card styling with subtle box shadow */
+.chef-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.chef-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Chef image layout */
+.chef-img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Chef content */
+.chef-content {
+  padding: 18px 20px;
+  text-align: center;
+}
+
+.chef-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3e2723;
+  margin-bottom: 0.5rem;
+}
+
+.chef-content p {
+  font-size: 1rem;
+  color: #5d4037;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.loading-text,
+.no-chefs-text {
+  font-size: 1.2rem;
+  color: #3e2723;
+  font-weight: 600;
+}
+
+.react-multi-carousel-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.react-multi-carousel-arrow:hover {
+  background-color: rgba(255, 87, 34, 1);
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .chef-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .chef-content p {
+    font-size: 0.9rem;
+  }
+
+  .chef-img {
+    height: 200px;
+  }
+}
+
+.chef-card-wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.chef-carousel-item {
+  padding: 0 12px; /* space between cards */
+  display: flex;
+  justify-content: center;
+}
+
+.chef-card {
+  max-width: 320px;
+  min-height: 100%;
+}
+
+.custom-dot-list-style {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-dot-list-style li {
+  display: inline-block;
+  background: #ff7043;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  transition: transform 0.3s ease;
+}
+
+.custom-dot-list-style li.react-multi-carousel-dot--active {
+  transform: scale(1.3);
+  background: #ff5722;
+}
+
+.carousel-item-padding-40-px {
+  padding: 0 20px;
+}
+
+.chef-card-wrapper[data-aos] {
+  will-change: transform;
+}
+
+.chef-card {
+  padding: 16px;
+  min-height: 380px;
+  border: 1px solid rgba(255, 112, 67, 0.15);
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.chef-card:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+.custom-dot-list-style {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.custom-dot-list-style li {
+  display: inline-block;
+  background: #ff7043;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.custom-dot-list-style .react-multi-carousel-dot--active {
+  background: #ff5722;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.chef-card-wrapper {
+  padding: 0 10px; 
+}
+
+.carousel-item-padding-40-px {
+  padding-right: 10px;
+  padding-left: 10px;
+}
