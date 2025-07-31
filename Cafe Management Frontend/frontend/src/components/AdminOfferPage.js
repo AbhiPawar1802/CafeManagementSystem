@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import deleteIcon from "../assets/images/delete.png"; // ✅ Make sure path is correct
-
+import deleteIcon from "../assets/images/delete.png";
 const AdminOfferPage = () => {
   const [offers, setOffers] = useState([]);
   const [formData, setFormData] = useState({
